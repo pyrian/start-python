@@ -76,3 +76,4 @@ $ jupyter notebook
 * [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
 * [IPython notebook](https://jupyter.readthedocs.io/en/latest/running.html)
 * [Fullstack development python](https://www.fullstackpython.com/application-dependencies.html)
+* [brew install permission 권한 에러](https://xho95.github.io/macos/sierra/package/homebrew/issues/2017/01/13/Using-Homebrew-and-some-Issues.html)
