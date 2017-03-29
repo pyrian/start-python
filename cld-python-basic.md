@@ -15,6 +15,22 @@ pip와 easy_installd은 PyPI(Python package Index)라는 패키지 저장소에�
 
 * [pip vs easy_install](https://packaging.python.org/pip_easy_install/)
 
+### proxy 환경설정
+proxy 환경에서 install하면 pypi.python.org ssl certification 오류 발생
+
+1. 오류 내용
+```
+Collecting virtualenv
+  Could not fetch URL https://pypi.python.org/simple/virtualenv/: There was a problem confirming the ssl certificate: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:749) - skipping
+  Could not find a version that satisfies the requirement virtualenv (from versions: )
+No matching distribution found for virtualenv
+```
+2. 해결
+pip-install alias를 추가하면 편하게 사용가능하다.
+```
+$ pip --trusted-host pypi.python.org install [packagename]
+```
+
 
 ## virtualenv, virtualenvwrapper
 프로젝트별로 분리된 가상 환경을 만들고, 필요한 패키지들을 관리할 수 있게 해주는 툴
