@@ -67,7 +67,20 @@ $ jupyter notebook
 # 2. 기초 문법
 * code fight -> arcade
 * jarvis : https://pythonspot.com/en/personal-assistant-jarvis-in-python/
+  - mpg321 : http://macappstore.org/mpg321/
+  - gTTS : https://github.com/pndurette/gTTS, https://pythonspot.com/en/personal-assistant-jarvis-in-python/
 * requests, beautifulsoup
+  - requests 모듈 proxy, ssl verify false필요
+    * proxies={"http": .., "https": ..}
+    * verify=False
+    * http://docs.python-requests.org/en/master/user/quickstart/#make-a-request
+  - beautifulsoup parse는 lxml
+    * chrome에서 긁고자 하는 html을 javascript에 document.querySelector()를 사용해서 테스트 후 작성하는 것이 좋으다
+    * find, select, select_one
+    * https://www.crummy.com/software/BeautifulSoup/bs4/doc/#a-regular-expression
+    * http://creativeworks.tistory.com/entry/PYTHON-3-Tutorials-24-%EC%9B%B9-%ED%81%AC%EB%A1%A4%EB%9F%AClike-Google-%EB%A7%8C%EB%93%A4%EA%B8%B0-1-How-to-build-a-web-crawler
+* 점프 투 파이썬
+  - https://wikidocs.net/28
 
 ## 참고
 * [Python package 관련 용어](https://packaging.python.org/glossary)
